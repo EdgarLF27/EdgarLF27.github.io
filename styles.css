@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", "Robotzo", sans-serif;
+  background-color: #121212;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #1a1a1a;
+  border-bottom: 2px solid #333;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+header img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f9a825;
+  box-shadow: 0 0 20px rgba(249, 168, 37, 0.4);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+header img:hover {
+  transform: scale(1.05) rotate(5deg);
+}
+
+header h2 {
+  font-size: 1.5rem;
+  color: #f9a825;
+  font-weight: 500;
+}
+
+main {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 1rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  width: 150px;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0; /* Evita que la imagen se encoja */
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card h3 {
+  color: #f9a825;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.card ul {
+  list-style-type: none; /* Quitamos las viñetas por defecto */
+  padding: 0;
+}
+
+.card li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+/* Creamos nuestras propias viñetas personalizadas */
+.card li::before {
+  content: "▶";
+  color: #f9a825;
+  position: absolute;
+  left: 0;
+  font-size: 0.8rem;
+}
+
+/* --- Pie de Página --- */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+  color: #888;
+}
+
+footer a {
+  color: #f9a825;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer form {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+input[type="email"] {
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #252525;
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+input[type="email"]:focus {
+  outline: none;
+  border-color: #f9a825;
+}
+
+#btn {
+  background-color: #f9a825;
+  color: #121212;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+#btn:hover {
+  background-color: #ffc107;
+  transform: scale(1.05);
+}

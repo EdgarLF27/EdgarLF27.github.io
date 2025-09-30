@@ -1,46 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi página personal</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Bienvenido a mi página personal</h1>
-        <img src="https://th.bing.com/th/id/OIP.umNsCxjsZHg2Zg8JSGdbfQHaF7?w=231&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
-            width="50%" alt="Mi vieja w">
-        <h2>Soy Edgar Flores Lira - Backend Developer</h2>
-        <p>Soy un desarrollador backend Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea a ad dolorem, iusto
-            corrupti quam nostrum tenetur beatae odio officia facilis dolorum modi hic labore incidunt quibusdam
-            deserunt itaque. Dolores.</p>
+        <div>
+            <h1>Bienvenido a mi página personal</h1>
+            <img src="pomo.jpg" alt="Portada del álbum Wolf Lego">
+            <h2>Soy Edgar Flores Lira - Developer</h2>
+        </div>
     </header>
+
     <main>
-        <section>
-            <hr>
-            <h3>Algo sobre mi</h3>
-            <ul>
-                <li>Programador</li>
-                <li>Curioso</li>
-                <li>Profesional</li>
-            </ul>
+        <section class="card">
+            <img src="1.jpg" alt="Foto personal">
+            <div class="card-content">
+                <h3>Algo sobre mí</h3>
+                <ul>
+                    <li>Programador</li>
+                    <li>Aguanto 7 cubas adulteradas y topadas</li>
+                    <li>Profesional en Overwatch</li>
+                    <li>Diamante en Frifayer</li>
+                </ul>
+            </div>
         </section>
-        <section>
-            <h3>Habilidades</h3>
-            <ul>
-                <li>TOEFL B1</li>
-                <li>Ingeniero</li>
-                <li>Perdedor en la vida</li>
-            </ul>
+
+        <section class="card">
+            <img src="2.jpg" alt="Imagen representando habilidades">
+            <div class="card-content">
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>Programador</li>
+                    <li>Ingeniero</li>
+                    <li>Heroico en Frifayer</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card">
+            <img src="3.jpg" alt="Arte de SithStuds">
+            <div class="card-content">
+                <h3>Top artistas</h3>
+                <ul>
+                    <li>Doony Graff</li>
+                    <li>The Strokes</li>
+                    <li>Cachirula</li>
+                </ul>
+            </div>
         </section>
     </main>
+
     <footer>
         <hr>
-        <p>Visita mi <a href="instagram.com/fl._.ed">instagram</a></p>
-        <input type="text" placeholder="Email">
-        <button>Suscríbete!</button>
+        <p>Visita mi <a href="https://www.instagram.com/fl._.ed/" target="_blank"
+                rel="noopener noreferrer">Instagram</a></p>
+        <form>
+            <input type="email" placeholder="Email" aria-label="Correo electrónico">
+            <button type="submit" id="btn">¡Suscríbete!</button>
+        </form>
     </footer>
 </body>
 
